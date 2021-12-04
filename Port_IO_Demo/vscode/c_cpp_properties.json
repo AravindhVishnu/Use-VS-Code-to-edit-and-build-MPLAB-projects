@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "ARM Cortex",
+            "includePath": [
+                "${workspaceFolder}",
+                "${workspaceFolder}\\**",
+                "C:\\Program Files (x86)\\microchip\\xc32\\v1.40\\pic32mx\\include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:\\Program Files\\Microchip\\xc32\\v3.01\\bin\\xc32-gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "gcc-arm"
+        }
+    ],
+    "version": 4
+}

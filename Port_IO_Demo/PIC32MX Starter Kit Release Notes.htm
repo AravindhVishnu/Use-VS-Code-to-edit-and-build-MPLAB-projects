@@ -1,0 +1,1927 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List
+href="PIC32MX%20Starter%20Kit%20Release%20Notes_files/filelist.xml">
+<link rel=Edit-Time-Data
+href="PIC32MX%20Starter%20Kit%20Release%20Notes_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>PIC32 Solutions</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PlaceType"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="PlaceName"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Microchip</o:Author>
+  <o:LastAuthor>Dennis Lehman</o:LastAuthor>
+  <o:Revision>64</o:Revision>
+  <o:TotalTime>1670</o:TotalTime>
+  <o:Created>2008-12-03T19:08:00Z</o:Created>
+  <o:LastSaved>2008-12-05T21:47:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>3114</o:Words>
+  <o:Characters>17755</o:Characters>
+  <o:Company>Microchip Technology Inc</o:Company>
+  <o:Lines>147</o:Lines>
+  <o:Paragraphs>41</o:Paragraphs>
+  <o:CharactersWithSpaces>20828</o:CharactersWithSpaces>
+  <o:Version>11.6568</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>BestFit</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--dl
+	{list-style-position:outside;}
+dt
+	{list-style-position:outside;}
+ol
+	{list-style-position:outside;}
+ul
+	{list-style-position:outside;}
+li
+	{list-style-position:outside;}
+dd
+	{list-style-position:outside;}
+
+ /* Font Definitions */
+ @font-face
+	{font-family:ArialMT;
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-format:other;
+	mso-font-pitch:auto;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.3in;
+	text-indent:-.3in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	tab-stops:list .3in;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+h2
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.4in;
+	text-indent:-.4in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	tab-stops:list .4in;
+	font-size:12.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-link:"Normal \(Web\) Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	background:white;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;}
+span.NormalWebChar
+	{mso-style-name:"Normal \(Web\) Char";
+	mso-style-locked:yes;
+	mso-style-link:"Normal \(Web\)";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;}
+p.heading0, li.heading0, div.heading0
+	{mso-style-name:heading0;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+span.highlight
+	{mso-style-name:highlight;
+	mso-ansi-font-size:14.5pt;
+	mso-bidi-font-size:14.5pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:blue;
+	background:white;
+	font-weight:bold;}
+span.heading01
+	{mso-style-name:heading01;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:black;
+	background:white;
+	font-weight:bold;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:464348814;
+	mso-list-template-ids:1008340966;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:1252933916;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1515047548 1778925758 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l1:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:1426263405;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1715921328 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l2:level1
+	{mso-level-tab-stop:.7in;
+	mso-level-number-position:left;
+	margin-left:.7in;
+	text-indent:-.25in;}
+@list l2:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3
+	{mso-list-id:1789354571;
+	mso-list-type:hybrid;
+	mso-list-template-ids:336742686 -1053816914 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:Arial;}
+@list l3:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4
+	{mso-list-id:2140024424;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-946052898 -2031706368 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Symbol;}
+@list l4:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+table.MsoTableContemporary
+	{mso-style-name:"Table Contemporary";
+	mso-tstyle-rowband-size:1;
+	mso-tstyle-colband-size:0;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:2.25pt solid white;
+	mso-border-insidev:2.25pt solid white;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+table.MsoTableContemporaryFirstRow
+	{mso-style-name:"Table Contemporary";
+	mso-table-condition:first-row;
+	mso-tstyle-shading:white;
+	mso-tstyle-pattern:gray-20 black;
+	mso-tstyle-diagonal-down:0in none windowtext;
+	mso-tstyle-diagonal-up:0in none windowtext;
+	color:windowtext;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableContemporaryOddRow
+	{mso-style-name:"Table Contemporary";
+	mso-table-condition:odd-row;
+	mso-tstyle-shading:white;
+	mso-tstyle-pattern:gray-5 black;
+	mso-tstyle-diagonal-down:0in none windowtext;
+	mso-tstyle-diagonal-up:0in none windowtext;
+	color:windowtext;}
+table.MsoTableContemporaryEvenRow
+	{mso-style-name:"Table Contemporary";
+	mso-table-condition:even-row;
+	mso-tstyle-shading:white;
+	mso-tstyle-pattern:gray-20 black;
+	mso-tstyle-diagonal-down:0in none windowtext;
+	mso-tstyle-diagonal-up:0in none windowtext;
+	color:windowtext;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!-------------------- HEAD --------------------------------------------><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="52226"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=EN-US link=blue vlink=blue style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<div>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;font-family:Arial;
+color:black'><a href="http://www.microchip.com/" title=www.Microchip.com><span
+style='color:black;text-decoration:none;text-underline:none'><img border=0
+width=152 height=42 id="_x0000_i1025" src=MicrochipLogo.gif></span></a><br>
+</span></b><strong><span style='font-size:18.0pt;font-family:Arial;color:blue'>PIC32MX&#8482;
+Starter Kit and PIC32MX&#8482; USB Starter Board Release Notes<o:p></o:p></span></strong></p>
+
+<p class=MsoNormal><span class=highlight><span style='font-size:10.0pt'>Dec 1,
+2008 &#8211; <span class=SpellE>ver</span> 1.1</span></span><b><span
+style='font-size:10.0pt;font-family:Arial;color:black'> </span></b><span
+style='font-size:10.0pt;color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal><b><span style='font-size:10.0pt;font-family:Arial;
+color:black'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-family:Arial'>Table of Contents<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial;color:black'><a
+href="#_Overview">Overview</a><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial;color:black'><a
+href="#_Documentation">Documentation</a><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial;color:black'><a
+href="#_What&#8217;s_new_in_this_release">What&#8217;s new in release <span
+class=GramE>1.1</span></a><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial;color:black'><a
+href="#_PIC32MX_Starter_Kit_Technical_Infor">Starter Kit Technical Information</a><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial;color:black'><a
+href="#_PIC32MX_Device_Re-Flash_Utility_(sk">PIC32MX Device Re-Flash Utility
+(sk_erase.exe)</a><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial;color:black'><a
+href="#_PIC32_Peripheral_Library_support">PIC32 Peripheral Library support</a><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial;color:black'><a
+href="#_Debug_Print_Library_support">Debug Print Library support</a><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial;color:black'><a
+href="#_PIC32MX_Starter_Kit_FAQs">PIC32MX Starter Kit <span class=SpellE>FAQs</span></a><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h1><a name="getting_started"></a><a name="_Getting_Started"></a><a
+name="_Overview"></a>Overview</h1>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'>The <span
+style='color:black'>PIC32MX</span> General Purpose Starter Kit (DM320001) or
+PIC32MX USB Starter Board (DM320003) provide an out-of-box
+&#8220;hands-on&#8221; opportunity to program, debug and run a PIC32MX360F512L
+General Purpose or PIC32MX460F512L USB microcontroller using the included
+sample code projects,<span style='mso-spacerun:yes'>&nbsp; </span>MPLAB IDE
+(Integrated Development Environment), MPLAB C compiler for PIC32, PIC32
+Peripheral Library and user Debug Print Library.<span
+style='mso-spacerun:yes'>&nbsp; </span>Refer to the <a
+href="PIC32MX%20Starter%20Kit%20User's%20Guide.pdf">PIC32MX Starter Kit User's
+Guide</a> or <a href="PIC32MX%20USB%20Starter%20Board%20User's%20Guide.pdf">PIC32MX
+USB Starter Board User's Guide</a> for specific details and operation.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'>To see the
+latest PIC32MX Starter Kit available documentation, example code or other
+PIC32MX collateral, please visit<span style='color:black'> <a
+href="http://www.microchip.com/pic32">www.microchip.com\pic32</a>.<o:p></o:p></span></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h1>Documentation</h1>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='color:black;mso-list:l3 level1 lfo1;tab-stops:list .5in'><span
+     style='font-size:10.0pt;font-family:Arial'><a
+     href="PIC32MX%20Starter%20Kit%20User's%20Guide.pdf">PIC32MX Starter Kit
+     User's <span class=SpellE>Guide.pdf</span></a><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-list:l3 level1 lfo1;tab-stops:list .5in'><span
+     style='font-size:10.0pt;font-family:Arial'><a
+     href="PIC32MX%20USB%20Starter%20Board%20User's%20Guide.pdf">PIC32MX USB
+     Starter Board User's Guide.pdf</a><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-list:l3 level1 lfo1;tab-stops:list .5in'><span
+     style='font-size:10.0pt;font-family:Arial'><a
+     href="PIC32MX%20Family%20Reference%20Manual%2061132B.pdf">PIC32MX Family
+     Reference Manual 61132B.pdf</a><o:p></o:p></span></li>
+ <li class=MsoNormal style='color:black;mso-list:l3 level1 lfo1;tab-stops:list .5in'><span
+     style='font-size:10.0pt;font-family:Arial'><a
+     href="PIC32MX%20Family%20Data%20Sheet%2061143E.pdf">PIC32MX Family Data
+     Sheet 61143E.pdf</a><o:p></o:p></span></li>
+</ul>
+
+<h1 align=center style='text-align:center'><a name="_Directory_Structure"></a><a
+name="_PIC32MX_Starter_Kit_Installation_Di"></a><a
+name="_What&#8217;s_new_in_this_release"></a><a
+name="_What&#8217;s_new_in_release_1.1"></a><span style='font-size:10.0pt;
+color:black'>
+
+<hr size=2 width="100%" align=center>
+
+</span></h1>
+
+<h1>What&#8217;s new in release 1.1</h1>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'>The new
+(default) PIC32 Starter Kit Installation target directory for release 1.1 is
+&#8211; <b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'>C:\pic32mx_starter_kits, </i></b>referred to as <b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'>&lt;install dir&gt;</i></b> throughout
+this release note and other Getting Started Guides in this installation.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'>A
+description of the <a href="#_PIC32MX_Starter_Kit_Installation_Di">PIC32MX
+Starter Kit Installation Directory Structure</a> is provided below.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'>The
+original PIC32 Starter Kit Tutorial example program, &#8220;<span class=SpellE>starter_kit_tutorial.c</span>&#8221;
+has been updated for users new to PIC32 highlighting some of the
+tutorial&#8217;s KEY CONCEPTS, such as:<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo1;tab-stops:list .5in'><span
+     style='font-size:10.0pt;font-family:Arial'>How to add support for PIC32
+     Peripheral Library functions and macros using <i style='mso-bidi-font-style:
+     normal'><span style='color:blue'>#include &lt;<span class=SpellE>plib.h</span>&gt;</span></i>.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo1;tab-stops:list .5in'><span
+     style='font-size:10.0pt;font-family:Arial'>How to set PIC32MX device fuse
+     bits in code using MPLAB C for PIC32 compiler <i style='mso-bidi-font-style:
+     normal'><span style='color:blue'>#<span class=SpellE>pragma</span> <span
+     class=SpellE>config</span></span></i> directives.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-list:l3 level1 lfo1;tab-stops:list .5in'><span
+     style='font-size:10.0pt;font-family:Arial'>How to use the PIC32 Peripheral
+     Library device performance configuration macros.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'>Several
+example code projects have been added to demonstrate a few of the PIC32MX
+device&#8217;s peripheral basic functionality, such as <st1:place w:st="on"><st1:PlaceName
+ w:st="on">I/O</st1:PlaceName> <st1:PlaceType w:st="on">Port</st1:PlaceType></st1:place>
+pins, Timers, PWM and DMA.<span style='mso-spacerun:yes'>&nbsp; </span>All of
+these example code projects also demonstrate the Debug Print Library macros,
+available to the user during debugging. These code examples are located in
+their respective directories below the <b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'>&lt;install dir&gt;</i></b>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='font-size:10.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoTableContemporary border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:-1;mso-yfti-firstrow:yes;height:12.35pt'>
+  <td width=168 valign=top style='width:1.75in;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  background:#CCCCCC;mso-shading:white;mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;
+  height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:1'><b><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>New Demo Applications<o:p></o:p></span></b></p>
+  </td>
+  <td width=633 valign=top style='width:474.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-left-alt:solid white 2.25pt;background:#CCCCCC;mso-shading:white;
+  mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:1'><b><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>Description<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:0;height:12.35pt'>
+  <td width=168 valign=top style='width:1.75in;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;background:#F2F2F2;mso-shading:white;
+  mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span class=SpellE><span
+  style='font-size:10.0pt;font-family:Arial'>Hello_world</span></span><span
+  style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+  </td>
+  <td width=633 valign=top style='width:474.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;mso-border-left-alt:solid white 2.25pt;
+  background:#F2F2F2;mso-shading:white;mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;
+  height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:10.0pt;
+  font-family:Arial'>The classic &quot;Hello World&quot; C program.<span
+  style='mso-spacerun:yes'>&nbsp; </span>This project demonstrates a simple console
+  output to an MPLAB IDE window using the Debug Print Library macros.<span
+  style='color:black'><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:16.65pt'>
+  <td width=168 valign=top style='width:1.75in;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;background:#CCCCCC;mso-shading:white;
+  mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;height:16.65pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span class=SpellE><span
+  style='font-size:10.0pt;font-family:Arial'>Port_IO</span></span><span
+  style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+  </td>
+  <td width=633 valign=top style='width:474.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;mso-border-left-alt:solid white 2.25pt;
+  background:#CCCCCC;mso-shading:white;mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;
+  height:16.65pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='font-size:10.0pt;
+  font-family:Arial'>This simple project highlights the PIC32 Peripheral
+  Library macros and how to use them to configure PORTD IO port pins as digital
+  outputs and digital inputs as well as configure I/O pin Change Notice, I/O
+  pin weak <span class=SpellE>pullups</span> and I/O pin Change Notice
+  Interrupts.<span style='mso-spacerun:yes'>&nbsp; </span>This project
+  demonstrates 2 different methods for monitoring switch presses; polling and
+  interrupt.<span style='color:black'><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:12.35pt'>
+  <td width=168 valign=top style='width:1.75in;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;background:#F2F2F2;mso-shading:white;
+  mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span class=SpellE><span
+  style='font-size:10.0pt;font-family:Arial'>Timer_Interrupts</span></span><span
+  style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+  </td>
+  <td width=633 valign=top style='width:474.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;mso-border-left-alt:solid white 2.25pt;
+  background:#F2F2F2;mso-shading:white;mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;
+  height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:10.0pt;
+  font-family:Arial'>This project showcases the PIC32MX device&#8217;s 32-bit
+  core timer which operates at &frac12; the System Clock Frequency and can be
+  used for measuring code execution time or other system events.<span
+  style='color:black'><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes;height:12.35pt'>
+  <td width=168 valign=top style='width:1.75in;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;background:#CCCCCC;mso-shading:white;
+  mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='font-size:10.0pt;
+  font-family:Arial'>PWM_DMA<span style='color:black'><o:p></o:p></span></span></p>
+  </td>
+  <td width=633 valign=top style='width:474.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;mso-border-left-alt:solid white 2.25pt;
+  background:#CCCCCC;mso-shading:white;mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;
+  height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='font-size:10.0pt;
+  font-family:Arial'>A slightly more challenging project, this example demonstrates
+  the use of 2 PWM and 2 DMA channels to automatically control and vary the
+  intensity of 2 LEDS, without using the CPU.<span style='color:black'><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'>To
+investigate more example projects for the PIC32MX, visit the PIC32 examples directory
+installed in the MPLAB C for PIC32 Compiler suite directory -<b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>
+C:\program files\microchip\MPLAB C32 Suite\examples</i></b>.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'>USB code
+examples supporting the new PIC32 USB Starter Board are included in this release.
+These code examples are located in their respective directories below the <b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>&lt;install
+dir&gt;</i></b>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='font-size:10.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoTableContemporary border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:-1;mso-yfti-firstrow:yes;height:12.35pt'>
+  <td width=228 valign=top style='width:171.0pt;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  background:#CCCCCC;mso-shading:white;mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;
+  height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:1'><b><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>New USB Demo Applications<o:p></o:p></span></b></p>
+  </td>
+  <td width=573 valign=top style='width:429.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-left-alt:solid white 2.25pt;background:#CCCCCC;mso-shading:white;
+  mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:1'><b><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>Description<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:0;height:12.35pt'>
+  <td width=228 valign=top style='width:171.0pt;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;background:#F2F2F2;mso-shading:white;
+  mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span class=SpellE><span
+  style='font-size:10.0pt;font-family:Arial'>Usb_sk_cdc_serial_device_demo</span></span><span
+  style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+  </td>
+  <td width=573 valign=top style='width:429.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;mso-border-left-alt:solid white 2.25pt;
+  background:#F2F2F2;mso-shading:white;mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;
+  height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:10.0pt;
+  font-family:Arial'>This project contains USB firmware for the Starter Kit
+  version of the <span class=SpellE>usb_cdc_serial_device_demo</span>,
+  essentially unmodified.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:16.65pt'>
+  <td width=228 valign=top style='width:171.0pt;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;background:#CCCCCC;mso-shading:white;
+  mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;height:16.65pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span class=SpellE><span
+  style='font-size:10.0pt;font-family:Arial'>Usb_sk_generic_host_dem</span></span><span
+  style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+  </td>
+  <td width=573 valign=top style='width:429.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;mso-border-left-alt:solid white 2.25pt;
+  background:#CCCCCC;mso-shading:white;mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;
+  height:16.65pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='font-size:10.0pt;
+  font-family:Arial'>This project contains USB firmware for the Starter Kit
+  version of the USB Generic Host Demo. It has been modified so that the information
+  received from the device is displayed on the MPLAB IDE using the <span
+  class=SpellE>db_utils</span> debug IO support. A button can be pressed on the
+  Starter Board to display the temperature and potentiometer data.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:12.35pt'>
+  <td width=228 valign=top style='width:171.0pt;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;background:#F2F2F2;mso-shading:white;
+  mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span class=SpellE><span
+  style='font-size:10.0pt;font-family:Arial'>Usb_sk_generic_device_demo</span></span><span
+  style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+  </td>
+  <td width=573 valign=top style='width:429.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;mso-border-left-alt:solid white 2.25pt;
+  background:#F2F2F2;mso-shading:white;mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;
+  height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:10.0pt;
+  font-family:Arial'>This project contains USB firmware for the Starter Kit
+  version of the <span class=SpellE>usb_generic_device_demo</span>. It is
+  modified to use the buttons to simulate changes to the temperature and
+  potentiometer readings.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;height:12.35pt'>
+  <td width=228 valign=top style='width:171.0pt;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;background:#CCCCCC;mso-shading:white;
+  mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span class=SpellE><span
+  style='font-size:10.0pt;font-family:Arial'>Usb_hid_mouse_device_demo</span></span><span
+  style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+  </td>
+  <td width=573 valign=top style='width:429.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;mso-border-left-alt:solid white 2.25pt;
+  background:#CCCCCC;mso-shading:white;mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;
+  height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='font-size:10.0pt;
+  font-family:Arial'>This project contains USB firmware for the Starter Kit
+  version of the <span class=SpellE>usb_hid_mouse_device_demo</span>. It has
+  been modified to support the switches and <span class=SpellE>LEDs</span>
+  available on the Starter Board. <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;height:14.85pt'>
+  <td width=228 valign=top style='width:171.0pt;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;background:#F2F2F2;mso-shading:white;
+  mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;height:14.85pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span class=SpellE><span
+  style='font-size:10.0pt;font-family:Arial'>Usb_sk_msd_host_demo</span></span><span
+  style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+  </td>
+  <td width=573 valign=top style='width:429.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;mso-border-left-alt:solid white 2.25pt;
+  background:#F2F2F2;mso-shading:white;mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;
+  height:14.85pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:10.0pt;
+  font-family:Arial'>This project contains USB firmware for the Starter Kit
+  version of the USB Data Logger demo. It has been modified to remove
+  temperature and potentiometer data logging support and to use the MPLAB IDE
+  for command input and terminal output via the <span class=SpellE>db_utils</span>
+  Starter Kit debugger IO.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes;height:15.75pt'>
+  <td width=228 valign=top style='width:171.0pt;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;background:#CCCCCC;mso-shading:white;
+  mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;height:15.75pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span class=SpellE><span
+  style='font-size:10.0pt;font-family:Arial'>Usb_sk_msd_device_demo</span></span><span
+  style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+  </td>
+  <td width=573 valign=top style='width:429.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;mso-border-left-alt:solid white 2.25pt;
+  background:#CCCCCC;mso-shading:white;mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;
+  height:15.75pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='font-size:10.0pt;
+  font-family:Arial'>This project contains USB firmware for the Starter Kit
+  version of the <span class=SpellE>usb_msd_device_demo</span>. It is
+  essentially unmodified from the <span class=SpellE>usb_msd_device_demo</span>.
+  However, usage of this demo with the USB Starter Board, requires an
+  additional I/O Expansion board and <span class=SpellE>PICtail</span>(TM)
+  board for SD(TM) and MMC cards. <o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'>See the <b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>&lt;install
+dir&gt;\microchip\help\USB Embedded Host Library <span class=SpellE>Help.chm</span></i></b>
+for a complete description of each USB demo application.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h1><a name="_What_is_the_same_from_release_1.0"></a><a
+name="_What&#8217;s_the_same_from_release_1.0"></a><a name=documentation></a><a
+name="_Documentation"></a><a name="_PIC32MX_Starter_Kit_Release_1.1_Ins"></a><a
+name="_PIC32MX_Starter_Kit_Release_1.1_Dir"></a>PIC32MX Starter Kit Release 1.1
+Directory Structure</h1>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial;color:black'>The
+following table briefly describes PIC32MX Starter Kit new directory
+structure.<span style='mso-spacerun:yes'>&nbsp; </span>This directory structure
+is different from the original PIC32MX Starter kit and PIC32MX USB Starter
+Board releases.<span style='mso-spacerun:yes'>&nbsp; </span>Therefore the
+directories described in the PIC32MX Starter Kit User&#8217;s Guide, DS61144B,
+as well as the PIC32MX USB Starter Board User&#8217;s Guide, DS61150B, will be
+incorrect until such time when these documents can be updated to match to
+current directory structure provided in this release 1.1.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoTableContemporary border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:-1;mso-yfti-firstrow:yes;height:12.35pt'>
+  <td width=360 valign=top style='width:3.75in;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  background:#CCCCCC;mso-shading:white;mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;
+  height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:1'><b><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>Directory<o:p></o:p></span></b></p>
+  </td>
+  <td width=441 valign=top style='width:330.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-left-alt:solid white 2.25pt;background:#CCCCCC;mso-shading:white;
+  mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:1'><b><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>Description<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:0;height:12.35pt'>
+  <td width=360 valign=top style='width:3.75in;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;background:#F2F2F2;mso-shading:white;
+  mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>C:\pic32mx_starter_kits<o:p></o:p></span></p>
+  </td>
+  <td width=441 valign=top style='width:330.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;mso-border-left-alt:solid white 2.25pt;
+  background:#F2F2F2;mso-shading:white;mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;
+  height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>This is the top level directory (default
+  PIC32MX Starter Kit installation directory).<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:24.75pt'>
+  <td width=360 valign=top style='width:3.75in;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;background:#CCCCCC;mso-shading:white;
+  mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;height:24.75pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>.\documentation<o:p></o:p></span></p>
+  </td>
+  <td width=441 valign=top style='width:330.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;mso-border-left-alt:solid white 2.25pt;
+  background:#CCCCCC;mso-shading:white;mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;
+  height:24.75pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>The <b style='mso-bidi-font-weight:normal'><i
+  style='mso-bidi-font-style:normal'>documentation</i></b> directory contains
+  the PIC32MX Starter Kit and PIC32MX USB Starter Board User&#8217;s guides as
+  well as the PIC32MX Starter Kit release notes <i style='mso-bidi-font-style:
+  normal'>(this file)</i>.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;height:12.35pt'>
+  <td width=360 valign=top style='width:3.75in;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;background:#F2F2F2;mso-shading:white;
+  mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>.\<span class=SpellE>getting_started_flash_tutorial</span><o:p></o:p></span></p>
+  </td>
+  <td width=441 valign=top style='width:330.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;mso-border-left-alt:solid white 2.25pt;
+  background:#F2F2F2;mso-shading:white;mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;
+  height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>The <span class=SpellE><b style='mso-bidi-font-weight:
+  normal'><i style='mso-bidi-font-style:normal'>getting_started_flash_tutorial</i></b></span>
+  directory contains the Getting Started Flash Tutorial.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;height:12.35pt'>
+  <td width=360 valign=top style='width:3.75in;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;background:#CCCCCC;mso-shading:white;
+  mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>.\&lt;individual demo directories&gt;<o:p></o:p></span></p>
+  </td>
+  <td width=441 valign=top style='width:330.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;mso-border-left-alt:solid white 2.25pt;
+  background:#CCCCCC;mso-shading:white;mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;
+  height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>These are the individual directories for every
+  demo application project.<span style='mso-spacerun:yes'>&nbsp; </span>There
+  is a separate readme.txt file in each directory that provides additional
+  information about the specific demo application.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;height:37.1pt'>
+  <td width=360 valign=top style='width:3.75in;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;background:#F2F2F2;mso-shading:white;
+  mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;height:37.1pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>.\microchip\USB<o:p></o:p></span></p>
+  </td>
+  <td width=441 valign=top style='width:330.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;mso-border-left-alt:solid white 2.25pt;
+  background:#F2F2F2;mso-shading:white;mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;
+  height:37.1pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>The <b style='mso-bidi-font-weight:normal'><i
+  style='mso-bidi-font-style:normal'>microchip\USB</i></b> directory contains a
+  copy of the Microchip USB stack version 1.04 supporting all of the USB demos
+  that come with the PIC32MX Starter Board.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;height:37.1pt'>
+  <td width=360 valign=top style='width:3.75in;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;background:#CCCCCC;mso-shading:white;
+  mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;height:37.1pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>.\microchip\USB\documentation<o:p></o:p></span></p>
+  </td>
+  <td width=441 valign=top style='width:330.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;mso-border-left-alt:solid white 2.25pt;
+  background:#CCCCCC;mso-shading:white;mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;
+  height:37.1pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>The <b style='mso-bidi-font-weight:normal'><i
+  style='mso-bidi-font-style:normal'>microchip/USB/documentation</i> </b>directory
+  contains the &#8220;Getting Started&#8221; guides for each of the USB demo
+  projects and is recommended reading before attempting the USB demo projects.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;height:15.75pt'>
+  <td width=360 valign=top style='width:3.75in;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;background:#F2F2F2;mso-shading:white;
+  mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;height:15.75pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>.\microchip\MDD File System<o:p></o:p></span></p>
+  </td>
+  <td width=441 valign=top style='width:330.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;mso-border-left-alt:solid white 2.25pt;
+  background:#F2F2F2;mso-shading:white;mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;
+  height:15.75pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>The <b style='mso-bidi-font-weight:normal'><i
+  style='mso-bidi-font-style:normal'>microchip/MDD File System</i></b>
+  directory contains a copy of the Microchip MDD File System Interface Library
+  version 1.2.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7;height:12.35pt'>
+  <td width=360 valign=top style='width:3.75in;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;background:#CCCCCC;mso-shading:white;
+  mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>.\microchip\MDD File System\documentation<o:p></o:p></span></p>
+  </td>
+  <td width=441 valign=top style='width:330.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;mso-border-left-alt:solid white 2.25pt;
+  background:#CCCCCC;mso-shading:white;mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;
+  height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>The <b style='mso-bidi-font-weight:normal'><i
+  style='mso-bidi-font-style:normal'>MDD File System\documentation</i></b>
+  directory contains the latest release notes for the MDD File System.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8;height:12.35pt'>
+  <td width=360 valign=top style='width:3.75in;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;background:#F2F2F2;mso-shading:white;
+  mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>.\microchip\include<o:p></o:p></span></p>
+  </td>
+  <td width=441 valign=top style='width:330.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;mso-border-left-alt:solid white 2.25pt;
+  background:#F2F2F2;mso-shading:white;mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;
+  height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>The <b style='mso-bidi-font-weight:normal'><i
+  style='mso-bidi-font-style:normal'>microchip\include</i></b> directory contains
+  USB Stack and MDD File system header files and many other common header files
+  such as <span class=SpellE>db_utils.h</span>.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9;mso-yfti-lastrow:yes;height:24.75pt'>
+  <td width=360 valign=top style='width:3.75in;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;background:#CCCCCC;mso-shading:white;
+  mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;height:24.75pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>.\microchip\common<o:p></o:p></span></p>
+  </td>
+  <td width=441 valign=top style='width:330.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;mso-border-left-alt:solid white 2.25pt;
+  background:#CCCCCC;mso-shading:white;mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;
+  height:24.75pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>This <b style='mso-bidi-font-weight:normal'><i
+  style='mso-bidi-font-style:normal'>microchip\common </i></b>directory
+  contains common source and library files used by many of the demo
+  applications, such as <span class=SpellE>db_utils.a</span>.<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<h1 align=center style='text-align:center'><span style='font-size:10.0pt;
+color:black'>
+
+<hr size=2 width="100%" align=center>
+
+</span></h1>
+
+<h1><a name="_PIC32MX_Starter_Kit_release_1.0"></a>PIC32MX Starter Kit release
+1.0</h1>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'>The initial
+1.0 release of the PIC32 Starter Kit included the example projects shown below
+and are also included in release 1.1<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoTableContemporary border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:-1;mso-yfti-firstrow:yes;height:12.35pt'>
+  <td width=132 valign=top style='width:99.0pt;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  background:#CCCCCC;mso-shading:white;mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;
+  height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:1'><b><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>Demo Application<o:p></o:p></span></b></p>
+  </td>
+  <td width=669 valign=top style='width:501.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-left-alt:solid white 2.25pt;background:#CCCCCC;mso-shading:white;
+  mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:1'><b><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>Description<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:0;height:12.35pt'>
+  <td width=132 valign=top style='width:99.0pt;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;background:#F2F2F2;mso-shading:white;
+  mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span class=SpellE><span
+  style='font-size:10.0pt;font-family:Arial'>Starter_kit_tutorial</span></span><span
+  style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+  </td>
+  <td width=669 valign=top style='width:501.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;mso-border-left-alt:solid white 2.25pt;
+  background:#F2F2F2;mso-shading:white;mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;
+  height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>This PIC32MX Starter Kit tutorial program
+  demonstrates many of the PIC32MX Starter Kit and MPLAB IDE features.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:16.65pt'>
+  <td width=132 valign=top style='width:99.0pt;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;background:#CCCCCC;mso-shading:white;
+  mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;height:16.65pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span class=SpellE><span
+  style='font-size:10.0pt;font-family:Arial'>Blink_leds</span></span><span
+  style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+  </td>
+  <td width=669 valign=top style='width:501.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;mso-border-left-alt:solid white 2.25pt;
+  background:#CCCCCC;mso-shading:white;mso-pattern:gray-20 black;padding:0in 5.4pt 0in 5.4pt;
+  height:16.65pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:128'><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>This example project demonstrates how to
+  create, build, program and run a new project in MPLAB IDE.<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes;height:12.35pt'>
+  <td width=132 valign=top style='width:99.0pt;border-top:none;border-left:
+  none;border-bottom:solid white 2.25pt;border-right:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;background:#F2F2F2;mso-shading:white;
+  mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span class=SpellE><span
+  style='font-size:10.0pt;font-family:Arial'>Simon_says</span></span><span
+  style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+  </td>
+  <td width=669 valign=top style='width:501.6pt;border:none;border-bottom:solid white 2.25pt;
+  mso-border-top-alt:solid white 2.25pt;mso-border-left-alt:solid white 2.25pt;
+  background:#F2F2F2;mso-shading:white;mso-pattern:gray-5 black;padding:0in 5.4pt 0in 5.4pt;
+  height:12.35pt'>
+  <p class=MsoNormal style='mso-yfti-cnfc:64'><span style='font-size:10.0pt;
+  font-family:Arial;color:black'>This is the </span><span style='font-size:
+  10.0pt;font-family:ArialMT;mso-bidi-font-family:ArialMT'>classic &#8220;Simon
+  Says&#8221; game </span><span style='font-size:10.0pt;font-family:Arial;
+  color:black'>pre-programmed </span><span style='font-size:10.0pt;font-family:
+  ArialMT;mso-bidi-font-family:ArialMT'>in the PIC32MX Starter Kit from the
+  factory.</span><span style='font-size:10.0pt;font-family:Arial;color:black'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h1><a name="_PIC32MX_Starter_Kit_Technical_Infor"></a>PIC32MX Starter Kit
+Technical Information<a name="PIC32_starter_kit_resources"></a></h1>
+
+<p class=MsoNormal><span style='mso-bookmark:PIC32_starter_kit_resources'><strong><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></strong></span></p>
+
+<p class=MsoNormal><span style='mso-bookmark:PIC32_starter_kit_resources'><strong><span
+style='font-family:Arial'>PIC32MX Dedicated Resources</span></strong></span><strong><span
+style='font-family:Arial'> </span></strong><b><span style='font-family:Arial'><br
+style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]></span></b></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Courier New";
+mso-no-proof:yes'>LED1 (RED)<span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>=
+PORTD.RD0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Courier New";
+mso-no-proof:yes'>LED2 (YELLOW)<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp; </span>=
+PORTD.RD1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Courier New";
+mso-no-proof:yes'>LED3 (GREEN)<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>=
+PORTD.RD2<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Courier New";
+mso-no-proof:yes'>SW1<span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>=
+PORTD.RD6 <span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='mso-spacerun:yes'>&nbsp;</span><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp; </span>(change
+notice pin CN15)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Courier New";
+mso-no-proof:yes'>SW2<span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>=
+PORTD.RD7 <span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(change
+notice pin CN16)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Courier New";
+mso-no-proof:yes'>SW3<span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>=
+PORTD.RD13<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> <span
+style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp; </span>(change notice pin
+CN19)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Courier New";
+mso-no-proof:yes'>JTAG.TMS<span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>=
+PORTA.RA0<span style='mso-spacerun:yes'>&nbsp; </span><span style='mso-tab-count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(used by
+debugger)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Courier New";
+mso-no-proof:yes'>JTAG.TCK<span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>=
+PORTA.RA1<span style='mso-spacerun:yes'>&nbsp; </span><span style='mso-tab-count:
+2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(used by
+debugger)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Courier New";
+mso-no-proof:yes'>JTAG.TDO<span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>=
+PORTA.RA5 <span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(used
+by debugger)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Courier New";
+mso-no-proof:yes'>JTAG.TDI<span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>=
+PORTA.RA4 <span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(used
+by debugger)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Courier New";
+mso-no-proof:yes'>PGC2<span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>=
+PORTB.RB6 <span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(used
+by debugger)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><span style='font-size:10.0pt;font-family:"Courier New";
+mso-no-proof:yes'>PGD2<span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>=
+PORTB.RB7 <span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>(used
+by debugger)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt;font-family:Arial;mso-no-proof:yes'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;mso-layout-grid-align:none;
+text-autospace:none'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:Arial;mso-no-proof:yes'>Note:</span></b><span
+style='font-size:10.0pt;font-family:Arial;mso-no-proof:yes'><span
+style='mso-spacerun:yes'>&nbsp; </span>There are no pullup resistors on SW1,
+SW2 or SW3.<span style='mso-spacerun:yes'>&nbsp; </span>To enable the PORTD
+pullups for SW1, SW2 and SW3, use the following:<br>
+CNPUE = (CN15_PULLUP_ENABLE | CN16_PULLUP_ENABLE | CN19_PULLUP_ENABLE);</span><b><u><span
+style='font-size:10.0pt;font-family:Arial'><o:p></o:p></span></u></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:10.0pt;font-family:Arial'><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></span></u></b></p>
+
+<p class=MsoNormal><b><u><span style='font-size:10.0pt;font-family:Arial'><br>
+</span></u></b><b style='mso-bidi-font-weight:normal'><span style='font-family:
+Arial'>PIC32MX Device Configuration Fuses <br style='mso-special-character:
+line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.2in'><span style='font-size:10.0pt;
+font-family:Arial'>The MPLAB C compiler for PIC32 supports #<span class=SpellE>pragma</span>
+directives to allow PIC32MX device configuration fuse bits to be specified in
+source code.<span style='mso-spacerun:yes'>&nbsp; </span>These are shown below.
+<span class=GramE>To see all the PIC32MX family device fuse configurations,
+refer to the MPLAB IDE menu <span class=SpellE><em><u><span style='font-family:
+Arial'>HelpTopics</span></u></em></span><em><u><span style='font-family:Arial'>&gt;PIC32MXConfigSettings</span></u></em><u>.</u></span><br>
+<br>
+</span><span style='font-size:10.0pt;font-family:"Courier New"'>#<span
+class=SpellE>pragma</span> <span class=SpellE>config</span> FNOSC = PRIPLL
+&nbsp; &nbsp; &nbsp; // Oscillator Selection <br>
+#<span class=SpellE>pragma</span> <span class=SpellE>config</span> FPLLIDIV =
+DIV_2 &nbsp; &nbsp; // PLL Input Divider (PIC32MX Starter Kit: use divide by 2
+only) <br>
+#<span class=SpellE>pragma</span> <span class=SpellE>config</span> FPLLMUL =
+MUL_20 &nbsp; &nbsp; // PLL Multiplier <br>
+#<span class=SpellE>pragma</span> <span class=SpellE>config</span> FPLLODIV =
+DIV_1 &nbsp; &nbsp; // PLL Output Divider <br>
+#<span class=SpellE>pragma</span> <span class=SpellE>config</span> FPBDIV =
+DIV_1 &nbsp; &nbsp; &nbsp; // Peripheral Clock divisor <br>
+#<span class=SpellE>pragma</span> <span class=SpellE>config</span> FWDTEN = OFF
+&nbsp; &nbsp; &nbsp; &nbsp; // Watchdog Timer <br>
+#<span class=SpellE>pragma</span> <span class=SpellE>config</span> WDTPS = PS1
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// Watchdog Timer <span class=SpellE>Postscale</span>
+<br>
+#<span class=SpellE>pragma</span> <span class=SpellE>config</span> FCKSM =
+CSDCMD &nbsp; &nbsp; &nbsp; // Clock Switching &amp; Fail Safe Clock Monitor <br>
+#<span class=SpellE>pragma</span> <span class=SpellE>config</span> OSCIOFNC =
+OFF &nbsp; &nbsp; &nbsp; // CLKO Enable <br>
+#<span class=SpellE>pragma</span> <span class=SpellE>config</span> POSCMOD = HS
+&nbsp; &nbsp; &nbsp; &nbsp; // Primary Oscillator <br>
+#<span class=SpellE>pragma</span> <span class=SpellE>config</span> IESO = OFF
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // Internal/External Switch-over <br>
+#<span class=SpellE>pragma</span> <span class=SpellE>config</span> FSOSCEN =
+OFF &nbsp; &nbsp; &nbsp; &nbsp;// Secondary Oscillator Enable <br>
+#<span class=SpellE>pragma</span> <span class=SpellE>config</span> CP = OFF
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; // Code Protect <br>
+#<span class=SpellE>pragma</span> <span class=SpellE>config</span> BWP = OFF
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; // Boot Flash Write Protect <br>
+#<span class=SpellE>pragma</span> <span class=SpellE>config</span> PWP = OFF
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; // Program Flash Write Protect <br>
+#<span class=SpellE>pragma</span> <span class=SpellE>config</span> ICESEL =
+ICS_PGx2 &nbsp;&nbsp; // ICE/ICD <span class=SpellE>Comm</span> Channel Select <br>
+#<span class=SpellE>pragma</span> <span class=SpellE>config</span> DEBUG = OFF
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; // Debugger Disabled for Starter Kit <br>
+</span><span style='font-size:10.0pt;font-family:Arial'><br>
+Note: To set the PIC32MX device configuration fuse bits from the MPLAB IDE main
+menu, select <em><u><span style='font-family:Arial'>Configure&gt;Configuration
+Bits</span></u></em> and un-check the box &quot;Configuration Bits set in
+code&quot;.&nbsp; Configure the desired fuse bits for the application.<span
+style='mso-spacerun:yes'>&nbsp; </span><b style='mso-bidi-font-weight:normal'><span
+style='color:red'>Caution</span></b> - Setting the device configuration bits to
+cause the PIC32MX device to operate faster than the maximum 80MHz system clock
+speed may cause the device to stop communicating with the on-board PIC18F4550
+Starter Kit debugger. See the IMPORTANT notice below regarding system clock
+oscillator.<o:p></o:p></span></p>
+
+<p class=MsoNormal><b><u><span style='font-size:10.0pt;font-family:Arial'><o:p><span
+ style='text-decoration:none'>&nbsp;</span></o:p></span></u></b></p>
+
+<p class=MsoNormal><br>
+<a name=important></a><a name="sk_erase"></a><span style='mso-bookmark:important'><strong><span
+style='font-family:Arial'>I</span></strong></span><strong><span
+style='font-family:Arial'>mportant PIC32MX Starter Kit Tips</span></strong><span
+style='font-size:10.0pt;font-family:Arial'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:.25in'><strong><i style='mso-bidi-font-style:normal'><span
+style='font-family:Arial;color:red'>JTAG must be enabled when using the Starter
+Kit</span></i></strong><span style='font-family:Arial'><br>
+</span><span style='font-size:10.0pt;font-family:Arial'>The 18F4550 on-board
+debugger uses JTAG to communicate with the PIC32MX device. The PIC32MX DDPCON
+register contains a bit, DDPCON&lt;3&gt;, which enables or disables the PIC32MX
+JTAG port.<span style='mso-spacerun:yes'>&nbsp; </span>On a device reset, this
+bit is set = 1 by default, enabling JTAG. This bit is configurable during
+runtime and if it is mistakenly set = 0, the on-board debugger can no longer
+talk to the PIC32MX device and will hang. It is important to leave the PIC32MX
+JTAG <u>enabled,</u> DDPCON&lt;3&gt; = 1, for proper operation of the PIC32MX
+Starter Kit. <br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]></span><span style='font-family:Arial'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:.25in'><strong><i style='mso-bidi-font-style:normal'><span
+style='font-family:Arial;color:red'>When a Data Breakpoint is reached, press
+&quot;step&quot; once before pressing &quot;Run&quot;</span></i></strong><b><i
+style='mso-bidi-font-style:normal'><span style='font-family:Arial;color:red'><br>
+</span></i></b><span style='font-size:10.0pt;font-family:Arial'>MPLAB has the
+ability to cause a debugger break when a memory location or peripheral register
+is accessed. When a data breakpoint causes MPLAB to halt program execution it
+appears that the debugger is &quot;stuck&quot; on the data breakpoint when
+&quot;Run&quot; is pressed. To continue running the program must be
+single-stepped first before pressing &quot;Run&quot;.<br style='mso-special-character:
+line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]></span><span style='font-family:Arial'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:.25in'><strong><i style='mso-bidi-font-style:normal'><span
+style='font-family:Arial;color:red'>Leave the USB cable attached while
+debugging</span></i></strong><b><i style='mso-bidi-font-style:normal'><span
+style='font-family:Arial;color:red'><br>
+</span></i></b><span style='font-size:10.0pt;font-family:Arial'>The PIC32MX
+Starter Kit does not reconnect automatically when the USB cable is removed and
+then re-attached. If the USB cable is removed, it is necessary to perform the
+following actions<span class=GramE>:</span><br>
+A)<span style='mso-spacerun:yes'>&nbsp; </span>From the Debug menu, select
+&quot;Debugger -&gt; None&quot;<br>
+B)<span style='mso-spacerun:yes'>&nbsp; </span>Connect USB cable<br>
+C)<span style='mso-spacerun:yes'>&nbsp; </span>Select &quot;Debugger -&gt;
+PIC32MX Starter Kit&quot; <br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]></span><span style='font-family:Arial'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:.25in'><strong><i style='mso-bidi-font-style:normal'><span
+style='font-family:Arial;color:red'>Some Configuration-Bit settings are not
+supported in this release</span></i></strong><b><i style='mso-bidi-font-style:
+normal'><span style='font-family:Arial;color:red'><br>
+</span></i></b><span class=GramE><span style='font-size:10.0pt;font-family:
+Arial'>In</span></span><span style='font-size:10.0pt;font-family:Arial'> this
+release, the starter kit does not support Code-Protect features of the PIC32MX
+processor. Also not supported is debugging while running with the <span
+class=GramE>32KHz</span> oscillator.<br>
+See sk_erase.exe utility tech tip below.&nbsp;<br style='mso-special-character:
+line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]></span><span style='font-family:Arial'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:.25in'><strong><i style='mso-bidi-font-style:normal'><span
+style='font-family:Arial;color:red'>Do not set System Clock Oscillator PLL fuse
+bits for frequency greater than 80MHz</span></i></strong><b><i
+style='mso-bidi-font-style:normal'><span style='font-family:Arial;color:red'><br>
+</span></i></b><span style='font-size:10.0pt;font-family:Arial'>Communication
+with PIC18F4550 Starter Kit Debugger may stop if the oscillator PLL fuse bits
+are configured for system clock frequencies greater than 80MHz.<br>
+See sk_erase.exe utility tech tip below.</span><span style='font-family:Arial'>
+<br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]><o:p></o:p></span></p>
+
+<div style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+</div>
+
+<h1><a name="_PIC32MX_Device_Re-Flash_Utility_(sk"></a>PIC32MX Device Re-Flash
+Utility (sk_erase.exe)<br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]><span style='font-size:12.0pt;mso-bidi-font-weight:normal'><o:p></o:p></span></h1>
+
+<p class=MsoNormal style='margin-left:.3in'><span style='font-size:10.0pt;
+font-family:Arial'>If the PIC32MX device configuration bits are mistakenly
+written to a non-supported state, run the sk_erase.exe utility located in <b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>&lt;install
+dir&gt;\tools </i></b>to re-flash the PIC32MX with a factory default device
+configuration.</span><span style='mso-spacerun:yes'>&nbsp; </span><span
+style='font-size:10.0pt;font-family:Arial'>Be sure to connect the USB cable to
+the PIC32MX debug mini connector (connector next to DEBUG LED) before launching
+the <span class=SpellE>sk_erase</span> utility.<o:p></o:p></span></p>
+
+<h1 align=center style='text-align:center'><a name="plib_support"></a><span
+style='font-size:10.0pt;color:black'>
+
+<hr size=2 width="100%" align=center>
+
+</span></h1>
+
+<h1><a name="_PIC32_Peripheral_Library_support"></a>PIC32 Peripheral Library
+support<span style='font-size:12.0pt'><o:p></o:p></span></h1>
+
+<p style='margin-top:5.0pt;margin-right:0in;margin-bottom:0in;margin-left:.25in;
+margin-bottom:.0001pt'><span style='font-size:10.0pt;font-family:Arial'>The
+PIC32 Peripheral Library macros and functions are designed to simplify PIC32MX
+peripheral configuration and control. These peripheral libraries are part of
+the MPLAB C for PIC32 compiler installation.</span><b style='mso-bidi-font-weight:
+normal'><u><span style='font-family:Arial'><o:p></o:p></span></u></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:.75in;text-indent:-.25in;mso-list:l0 level1 lfo2;tab-stops:list .75in'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:10.0pt;font-family:Arial'>To
+use any PIC32 Peripheral Library macro or function, add the following to your
+source code file: &quot;#include &lt;<span class=SpellE>plib.h</span>&gt;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:.75in;text-indent:-.25in;mso-list:l0 level1 lfo2;tab-stops:list .75in'><![if !supportLists]><span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:10.0pt;font-family:Arial'>If
+not using the PIC32 Peripheral Library but directly addressing any peripheral
+SFR, add the following to your source code file:&nbsp;&quot;#include
+&lt;p32xxxx.h&gt;&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal><a name="performance_macros"></a><b style='mso-bidi-font-weight:
+normal'><u><span style='font-size:10.0pt;font-family:Arial'><br>
+</span></u></b><b style='mso-bidi-font-weight:normal'><span style='font-family:
+Arial'>PIC32 Peripheral Library Device Performance macros<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.25in'><u><span style='font-family:Arial'><br>
+</span></u><span style='font-size:10.0pt;font-family:Arial'>The PIC32
+Peripheral Library provides macros and functions to easily configure the
+PIC32MX device parameters for optimal system performance.<span
+style='mso-spacerun:yes'>&nbsp; </span>These functions will properly set the
+required system parameters, such as number of Flash wait states and RAM wait
+states, based on the system clock frequency argument passed to the function, as
+well as enabling the CPU instruction cache.<span
+style='mso-spacerun:yes'>&nbsp; </span>In addition to setting the device parameters
+mentioned, these functions will also set the peripheral bus clock (PBCLK)
+frequency based on which function is used.<span style='mso-spacerun:yes'>&nbsp;
+</span>These two functions are <span class=SpellE><span class=GramE>SYSTEMConfigPerformance</span></span><span
+class=GramE>(</span> ) and <span class=SpellE>SYSTEMConfig</span>( ).<br>
+<br>
+<span class=SpellE>SYSTEMConfigPerformance</span>( ) ignores the PBCLK fuse
+selection FPBDIV (set either in code or from the MPLAB IDE menu) and calculates
+the fastest possible PBCLK based on the system clock frequency parameter passed
+in the function call. Typically, this is a PBCLK divisor = 1:1, which means the
+<span class=GramE>PBCLK</span> will operate at the same frequency as the system
+clock (SYSCLK).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l4 level1 lfo3;
+tab-stops:list .75in'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:10.0pt;font-family:Arial'>Example:
+</span><span class=SpellE><span style='font-size:10.0pt;font-family:"Courier New"'>SYSTEMConfigPerformance</span></span><span
+style='font-size:10.0pt;font-family:"Courier New"'>(80000000);</span><span
+style='font-size:10.0pt;font-family:Arial'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='font-size:10.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='font-size:10.0pt;
+font-family:Arial'><br>
+<span class=SpellE><span class=GramE>SYSTEMConfig</span></span><span
+class=GramE>(</span> ) sets the PBCLK frequency defined by the FPBDIV
+configuration fuse set in code or from the MPLAB IDE Configuration Bits menu.
+Use this function if you want to maintain the PBCLK frequency set by the FPBDIV
+fuse.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='font-size:10.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l4 level1 lfo3;
+tab-stops:list .75in'><![if !supportLists]><span style='font-family:Symbol;
+mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:10.0pt;font-family:Arial'>Example:
+</span><span class=SpellE><span style='font-size:10.0pt;font-family:"Courier New"'>SYSTEMConfig</span></span><span
+style='font-size:10.0pt;font-family:"Courier New"'>(80000000,
+SYS_CFG_WAIT_STATES | SYS_CFG_PCACHE);</span><span style='font-size:10.0pt;
+font-family:Arial'> </span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></i></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><span style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></i></b></p>
+
+<div class=MsoNormal align=center style='text-align:center'><a
+name="configuration_fuses"></a><span style='font-size:10.0pt;font-family:Arial;
+color:black'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h1><a name="debug_print"></a><a name="_Debug_Print_Library_support"></a>Debug
+Print Library support<span style='font-weight:normal;mso-bidi-font-weight:bold'><br
+style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]></span><span style='font-size:12.0pt;font-weight:normal;mso-bidi-font-weight:
+bold'><o:p></o:p></span></h1>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:Arial'>Important - The Debug Print Library
+macros are supported in <span style='color:red'>DEBUG</span> mode only.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.2in'><span style='font-size:10.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='font-size:10.0pt;
+font-family:Arial'>The Debug Print Library macros DBINIT, DBPUTC, DBPUTS,
+DPPRINTF, DBGETS and DBGETC allow the user to add basic input/output capability
+between a PIC32 Starter Kit application and the MPLAB IDE Starter Kit console
+window during runtime debugging.<span style='mso-spacerun:yes'>&nbsp;
+</span>These Debug Print Library macros are defined in &#8220;<span
+class=SpellE>db_utils.h</span>&#8221;, located in <b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'><span style='color:black'>&lt;install
+dir&gt;\microchip\include.<span style='mso-spacerun:yes'>&nbsp; </span></span></i></b>They
+provide the interface for all of the Debug Print Library functions in &#8220;<span
+class=SpellE>db_utils.a</span>&#8221; with the exception of DBPRINTF macro
+which defines the interface to the <span class=SpellE>printf</span>( ) function
+provided in the MPLAB C Compiler for PIC32. The <span class=SpellE>db_utils.a</span>
+library file is located in <b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'><span style='color:black'>&lt;install
+dir&gt;\microchip\common</span></i></b>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.2in'><span style='font-size:10.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='font-size:10.0pt;
+font-family:Arial'>The sample projects provided with the PIC32MX Starter Kit
+have been properly configured to the use the Debug Print Library macros.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='font-size:10.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='font-size:10.0pt;
+font-family:Arial'>To use the Debug Print Library utility macros in your own
+application, do the following:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l2 level1 lfo4;
+tab-stops:list .7in .75in'><![if !supportLists]><span style='font-size:10.0pt;
+font-family:Arial;mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:10.0pt;font-family:Arial'>Add &quot;#include &quot;<span
+class=SpellE>db_utils.h</span>&quot; to your source code and either <br>
+a) specify the path to <span class=SpellE>db_utils.h</span> in the MPLAB IDE
+menu <i style='mso-bidi-font-style:normal'>Project Build
+Options&gt;Directories&gt;Include Search Path</i><br>
+b) or place a copy of the <span class=SpellE>db_utils.h</span> file in your
+project directory.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l2 level1 lfo4;
+tab-stops:list .7in .75in'><![if !supportLists]><span style='font-size:10.0pt;
+font-family:Arial;mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:10.0pt;font-family:Arial'>Add the <span class=SpellE>db_utils.a</span>
+file to the library branch of your project tree.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l2 level1 lfo4;
+tab-stops:list .7in .75in'><![if !supportLists]><span style='font-size:10.0pt;
+font-family:Arial;mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:10.0pt;font-family:Arial'>Add the macro definition
+&quot;PIC32_STARTER_KIT&quot; to the compiler options specified in the MPLAB
+IDE menu<i style='mso-bidi-font-style:normal'> Project Build Options&gt;C
+Compiler&gt;Macro Definitions</i> (preferred method).<span
+style='mso-spacerun:yes'>&nbsp; </span>This creates a global definition for the
+entire project, which means Debug Print Macros can be used in multiple source
+files in the project.<span style='mso-spacerun:yes'>&nbsp; </span>An alternative
+is to simply add the &#8220;#<span class=GramE>define</span>
+PIC32_STARTER_KIT&#8221; macro definition directly in your source code file
+where the Debug Print macros will be used. <b style='mso-bidi-font-weight:normal'><span
+style='color:red'><span style='mso-spacerun:yes'>&nbsp;</span>Important</span></b>
+- Be sure the place the &#8220;#define PIC32_STARTER_KIT&#8221; before the line
+containing &#8220;#include <span class=SpellE>db_utils.h</span>&#8221; or a
+compiler error will be generated.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.75in;text-indent:-.25in;mso-list:l2 level1 lfo4;
+tab-stops:list .7in .75in'><![if !supportLists]><span style='font-size:10.0pt;
+font-family:Arial;mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-size:10.0pt;font-family:Arial'>Finally, be sure to call <span
+class=GramE>DBINIT(</span> ) first before any other Debug Print Library macro.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.2in'><span style='font-size:10.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:Arial'>Using <span class=GramE>DBPRINTF(</span>
+)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='font-size:10.0pt;
+font-family:Arial'>The DBPRINTF macro allows formatted string output to be
+specified, which permits variables and register contents to be output to the
+MPLAB Starter Kit console window during debugging.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='font-size:10.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='font-size:10.0pt;
+font-family:Arial'>For example, the following line of code: </span><span
+class=GramE><b style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;
+font-family:"Courier New";color:blue'>DBPRINTF(</span></b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;font-family:
+"Courier New";color:blue'>&quot;The value of OSCCON register is %X \<span
+class=SpellE>n&quot;,OSCCON</span>);</span></b><span style='font-size:10.0pt;
+font-family:"Courier New"'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='font-size:10.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span class=GramE><span
+style='font-size:10.0pt;font-family:Arial'>produces</span></span><span
+style='font-size:10.0pt;font-family:Arial'> this output in the MPLAB Starter
+Kit console window: </span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:"Courier New";color:blue'>[<span
+class=SpellE>TargetOUT</span>] The value of OSCCON register is 391F7702</span></b><span
+style='font-size:10.0pt;font-family:"Courier New"'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><a name="tips_faqs"></a><span style='font-size:10.0pt;
+font-family:Arial'><br>
+<b style='mso-bidi-font-weight:normal'>Floating Point numbers used with <span
+class=GramE>DBPRINTF(</span> )<o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='font-size:10.0pt;
+font-family:Arial'>If floating point numbers are not passed to the <span
+class=SpellE><span class=GramE>printf</span></span><span class=GramE>(</span> )
+function, the amount of FLASH memory required by the application can be reduced
+by linking <u>without</u> the floating point libraries.<span
+style='mso-spacerun:yes'>&nbsp; </span>This is can be achieved by using size
+(&#8211;Os) optimization and selecting &#8220;Exclude floating-point
+library&#8221; (-<span class=SpellE>mno</span>-float) options in the MPLAB
+PIC32 Linker script Build Options menu.<span style='mso-spacerun:yes'>&nbsp;
+</span>Refer to the compiler user&#8217;s manual for further details on <span
+class=SpellE><span class=GramE>printf</span></span><span class=GramE>(</span> )
+and compiler options.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><span style='font-size:10.0pt;
+font-family:Arial'><br>
+<b style='mso-bidi-font-weight:normal'>NOTE: </b>All PIC32MX Starter Kit
+tutorial code example projects<b style='mso-bidi-font-weight:normal'> <u>are
+not</u></b> linked with floating point libraries.<span
+style='mso-spacerun:yes'>&nbsp; </span>If you want to use floating point
+numbers with the <span class=SpellE><span class=GramE>printf</span></span><span
+class=GramE>(</span> ) function in these example projects, you will need to
+change the linker script build options to include floating-point libraries (see
+above).<br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]><b style='mso-bidi-font-weight:normal'><o:p></o:p></b></span></p>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:10.0pt;font-family:Arial;color:black'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h1><a name="_PIC32MX_Starter_Kit_FAQs"></a>PIC32MX Starter Kit <span
+class=SpellE>FAQs</span><span style='font-weight:normal'><br style='mso-special-character:
+line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]><strong><span style='font-family:Arial;font-weight:normal'><o:p></o:p></span></strong></span></h1>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo5;tab-stops:list .5in'><strong><i
+     style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;
+     font-family:Arial;mso-bidi-font-weight:normal'>The debugger has stopped
+     communicating with MPLAB IDE after programming the PIC32 Starter Kit</span></i></strong><strong><span
+     style='font-size:10.0pt;font-family:Arial;font-weight:normal'> &#8211;The PIC32
+     configuration fuses may have been programmed with either an unsupported
+     mode or the Oscillator PLL fuses were programmed to generate a system
+     clock faster than 80MHz.<span style='mso-spacerun:yes'>&nbsp; </span>See
+     the <a href="#sk_erase">sk_erase.exe</a> topic above to re-flash the default
+     PIC32 settings.</span></strong><span style='font-size:10.0pt;font-family:
+     Arial'><br style='mso-special-character:line-break'>
+     <![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+     <![endif]></span><strong><i style='mso-bidi-font-style:normal'><span
+     style='font-size:10.0pt;mso-bidi-font-weight:normal'><o:p></o:p></span></i></strong></li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo5;tab-stops:list .5in'><strong><i
+     style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;
+     font-family:Arial'>Is it possible to program a PIC32MX Starter Kit
+     application to run in &#8220;Release&#8221; mode?</span></i></strong><strong><span
+     style='font-size:10.0pt;font-family:Arial;font-weight:normal;mso-bidi-font-weight:
+     bold'> &#8211; Yes.<span style='mso-spacerun:yes'>&nbsp; </span>Select
+     RELEASE from the MPLAB IDE drop down menu in the main tool bar and
+     re-compile the project. Program the device.<span
+     style='mso-spacerun:yes'>&nbsp; </span>MPLAB will warn of an &#8220;Image
+     Platform Mismatch&#8221; and prompt you to rebuild the project.<span
+     style='mso-spacerun:yes'>&nbsp; </span>Politely respond NO and proceed
+     with the programming. When the programming is complete, select debugger =
+     none in the MPLAB IDE menu (deselecting the debugger before disconnecting
+     is always recommended), disconnect the USB cable to remove power from the
+     PIC32, then re-connect the USB cable to apply power and the application
+     will now be running in RELEASE mode.</span></strong><span
+     style='font-size:10.0pt;font-family:Arial;mso-bidi-font-weight:bold'> <br
+     style='mso-special-character:line-break'>
+     <![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+     <![endif]></span></li>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo5;tab-stops:list .5in'><strong><i
+     style='mso-bidi-font-style:normal'><span style='font-size:10.0pt;
+     font-family:Arial'>No debug print messages appear in the MPLAB IDE Starter
+     Kit Window when using DBPUTS or DBPRINTF macros. </span></i></strong><span
+     style='font-size:10.0pt;font-family:Arial'><span
+     style='mso-spacerun:yes'>&nbsp;</span>- Be sure to add the macro
+     definition &quot;PIC32_STARTER_KIT&quot; in the MPLAB IDE menu<i
+     style='mso-bidi-font-style:normal'> Project Build Options&gt;C
+     Compiler&gt;Macro Definitions</i> and be sure the project is built for
+     DEBUG, not RELEASE mode.</span></li>
+</ol>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></p>
+
+<div class=MsoNormal align=center style='text-align:center'><a
+name="_Peripheral_Library_Examples"></a><span style='font-size:10.0pt;
+font-family:Arial;color:black'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+</div>
+
+</body>
+
+</html>
