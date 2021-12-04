@@ -1,4 +1,4 @@
-# Use-VS-Code-to-edit-and-build-MPLAB-projects
+# Use-VS-Code-to-build-MPLAB-projects
 Example of how to use VS Code to build MPLAB C/C++ projects  
 
 Description: Visual Studio Code is a more pleasant development environment to work with than MPLAB. This example shows how VS Code can be used for building MPLAB C/C++ projects. It does not show how to debug from VS Code.  
