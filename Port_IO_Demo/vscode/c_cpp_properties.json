@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "name": "ARM Cortex",
+            "name": "PIC32",
             "includePath": [
                 "${workspaceFolder}",
                 "${workspaceFolder}\\**",
