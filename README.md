@@ -12,3 +12,5 @@ Instructions:
 6. Then it is possivle to build, clean and rebuild using the VS Code tasks.
 
 Example project info: The Port_IO_Demo example project is setup as a bare metal project. It is configured to be built for the PIC32MX General Purpose Starter Kit (DM320001) development board with the PIC32 processor. Version 5.5 of MPLAB is used.
+
+Note: Tested on Windows 10
